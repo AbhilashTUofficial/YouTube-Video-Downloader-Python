@@ -46,7 +46,7 @@ def main():
     mp4Streams = obj.streams.filter(file_extension='mp4')
 	
 
-    printStreams(avStreams, aStreams, vStreams, mp4Streams)
+    # printStreams(avStreams, aStreams, vStreams, mp4Streams)
 
     #* Download
     #* (method) download: (
@@ -58,10 +58,10 @@ def main():
     #* max_retries: int) -> str
     #! filter return iterable, get_by_itag return single stream.
 
-    target=obj.streams.get_by_itag('139')
-    target.download(path)
+    # target=obj.streams.get_by_itag('139')
+    # target.download(path)
 
-
+    print(obj.title)
 	
 
 
